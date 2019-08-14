@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- JBPM4.4 配置 开始 -->
+    <!-- jbpm提供工具类，获得流程引擎 -->
+    <bean id="springHelper" class="org.jbpm.pvm.internal.processengine.SpringHelper">
+        <property name="jbpmCfg" value="jbpm.cfg.xml"/>
+    </bean>
+    <!--JBPM工作流的引擎API  中心起点流程引擎API-->
+    <bean id="processEngine" factory-bean="springHelper" factory-method="createProcessEngine"/>
+    <!-- 流程源服务接口。提供对流程定义的部署，查询，删除等操作 -->
+    <bean id="repositoryService" factory-bean="processEngine" factory-method="getRepositoryService"/>
+    <!-- 流程执行服务接口。提供启动流程实例，"执行"推进，设置流程变量等操作 -->
+    <bean id="executionService" factory-bean="processEngine" factory-method="getExecutionService"/>
+    <!-- 流程管理服务接口 -->
+    <bean id="managementService" factory-bean="processEngine" factory-method="getManagementService"/>
+    <!-- 提供对任务列表的访问接口 -->
+    <bean id="taskService" factory-bean="processEngine" factory-method="getTaskService"/>
+    <!-- 历史流程管理 -->
+    <bean id="historyService" factory-bean="processEngine" factory-method="getHistoryService"/>
+    <!-- 组织机构管理 -->
+    <bean id="identityService" factory-bean="processEngine" factory-method="getIdentityService"/>
+    <!-- JBPM4.4 配置 结束 -->
+</beans>

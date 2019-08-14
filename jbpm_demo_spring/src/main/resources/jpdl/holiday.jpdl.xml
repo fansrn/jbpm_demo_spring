@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<process key="holiday" name="holiday" version="2" xmlns="http://jbpm.org/4.4/jpdl">
+    <start g="84,252,48,48" name="start">
+        <transition g="-56,-22" name="to 申请" to="请假申请"/>
+    </start>
+    <end g="684,252,48,48" name="end"/>
+    <task name="请假申请" g="264,252,92,52" assignee="staff">
+        <transition g="-56,-22" name="to 审批" to="请假审批"/>
+    </task>
+    <task name="请假审批" g="468,252,92,52" assignee="leader">
+        <transition g="-50,-22" name="to end" to="end"/>
+    </task>
+</process>
