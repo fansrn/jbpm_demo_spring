@@ -27,7 +27,7 @@ public class JbpmUtils {
     /**
      * description 初始化数据库环境
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 11:45 2019/8/13
      */
     public static void initDatabase() {
@@ -126,7 +126,7 @@ public class JbpmUtils {
      * @param workflowName namw of workflow
      * @param fileName     name of file
      * @return Deployment
-     * @author faonsrn
+     * @author fansrn
      * @date 14:08 2019/8/13
      */
     public static NewDeployment deployFromZipInputStream(String workflowName, String fileName) {
@@ -153,7 +153,7 @@ public class JbpmUtils {
      *
      * @param deplotmentId 流程部署id
      * @return result
-     * @author faonsrn
+     * @author fansrn
      * @date 11:49 2019/8/13
      */
     public static boolean del(String deplotmentId) {
@@ -174,7 +174,7 @@ public class JbpmUtils {
      *
      * @param deploymentId 流程部署id
      * @return ProcessDefinition
-     * @author faonsrn
+     * @author fansrn
      * @date 15:00 2019/8/13
      */
     public static ProcessDefinition getProcessDefinition(String deploymentId) {
@@ -193,7 +193,7 @@ public class JbpmUtils {
      * @param processInstanceKey 流程定义 key
      * @param variables          流程变量
      * @return ProcessInstance
-     * @author faonsrn
+     * @author fansrn
      * @date 15:09 2019/8/13
      */
     public static ProcessInstance startByKey(String processInstanceKey, Map<String, Object> variables) {
@@ -211,7 +211,7 @@ public class JbpmUtils {
      * @param processInstanceId 流程定义 id
      * @param variables         流程变量
      * @return ProcessInstance
-     * @author faonsrn
+     * @author fansrn
      * @date 15:09 2019/8/13
      */
     public static ProcessInstance startById(String processInstanceId, Map<String, Object> variables) {
@@ -224,7 +224,7 @@ public class JbpmUtils {
      *
      * @param processInstanceId 流程实例id
      * @return tasks
-     * @author faonsrn
+     * @author fansrn
      * @date 15:41 2019/8/13
      */
     public static List<Task> getTasks(String processInstanceId) {
@@ -239,7 +239,7 @@ public class JbpmUtils {
      *
      * @param assignee 代理人
      * @return tasks
-     * @author faonsrn
+     * @author fansrn
      * @date 16:42 2019/8/13
      */
     public static List<Task> getPersonalTasks(String assignee) {
@@ -251,7 +251,7 @@ public class JbpmUtils {
      *
      * @param processInstanceId 流程实例id
      * @return state
-     * @author faonsrn
+     * @author fansrn
      * @date 15:59 2019/8/13
      */
     public static String getState(String processInstanceId) {
@@ -264,7 +264,7 @@ public class JbpmUtils {
      *
      * @param taskId 任务id
      * @return result
-     * @author faonsrn
+     * @author fansrn
      * @date 16:48 2019/8/13
      */
     public static boolean completeTask(String taskId) {
@@ -282,7 +282,7 @@ public class JbpmUtils {
      *
      * @param taskId 任务id
      * @return outcomes
-     * @author faonsrn
+     * @author fansrn
      * @date 16:48 2019/8/13
      */
     public static Set<String> getOutcomes(String taskId) {

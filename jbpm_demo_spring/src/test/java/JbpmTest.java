@@ -61,7 +61,7 @@ public class JbpmTest {
     /**
      * description 初始化数据库环境
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 11:48 2019/8/13
      */
     @Test
@@ -72,7 +72,7 @@ public class JbpmTest {
     /**
      * description 部署流程
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 11:48 2019/8/13
      */
     @Test
@@ -114,7 +114,7 @@ public class JbpmTest {
     /**
      * description 删除流程
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 11:48 2019/8/13
      */
     @Test
@@ -129,7 +129,7 @@ public class JbpmTest {
     /**
      * description 流程定义信息查询
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 14:45 2019/8/13
      */
     @Test
@@ -159,7 +159,7 @@ public class JbpmTest {
     /**
      * description 启动流程
      *
-     * @author faonsrn
+     * @author fansrn
      * @date 15:13 2019/8/13
      */
     @Test
